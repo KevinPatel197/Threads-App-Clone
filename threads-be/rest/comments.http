@@ -1,0 +1,16 @@
+GET http://localhost:3001/comments HTTP/1.1
+
+###
+
+GET http://localhost:3001/comments?parentId=659287f9952e3967362e2557 HTTP/1.1
+
+###
+
+POST http://localhost:3001/comments HTTP/1.1
+content-type: application/json
+
+{
+     "text": "Heyy 🙋‍♂️",
+     "userId" : "65926de9bf5244f38e6b829c",
+     "parentId" : "65928c03ed74778391dee3b8"
+}
